@@ -11,17 +11,45 @@ h4 {
   align-content: center;
   border: 1px solid orange;
 }
+.container1 .flexItem {
+  /*flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 80px;*/
+  /*flex: 1;*/
+  flex: 1;
+}
+.container1 .item3 {
+  flex-grow: 2;
+  background-color: aqua;
+  order: 1;
+}
+.container1 .item6 {
+  flex-grow: 4;
+  background-color: darkorange;
+  order: 2;
+}
+
 .container2 {
   flex-flow: column;
   justify-content: center;
   border: 1px solid blue;
 }
+
+.container2 .flexItem {
+  flex: 1;
+}
+
 .container3 {
   justify-content: right;
   border: 1px solid red;
   align-content: center;
   flex-wrap: wrap;
 }
+
+.container3 .flexItem {
+  flex: 1;
+}
+
 .flexItem {
   padding: 10px;
   background: greenyellow;
