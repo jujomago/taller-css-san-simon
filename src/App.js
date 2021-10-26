@@ -1,7 +1,7 @@
 import "./App.css";
 import { CardHeroe } from "./components/card-heroe";
-import { FlexBox } from "./components/flex-box";
-import { heroes } from "./data/heroes";
+//import { FlexBox } from "./components/flex-box";
+import heroes from "./data/heroes.json";
 import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
