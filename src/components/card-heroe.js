@@ -2,7 +2,7 @@ import React from "react";
 
 export const CardHeroe = ({ superhero, id, alter_ego, first_appearance }) => {
   return (
-    <div className="flexItem card">
+    <div className="Item card">
       <img
         src={`./assets/heroes/${id}.jpg`}
         className="card-img-top"

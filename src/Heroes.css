@@ -1,0 +1,54 @@
+/*/Flexbox*/
+/*.App{
+    border:1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    flex-direction: row-reverse;
+}
+.flexItem{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+}
+.flexItem:nth-child(19){
+    flex-grow: 0;
+}
+.flexItem:nth-child(20){
+    flex-grow: 0;
+}*/
+
+/*Grid Layout*/
+.App{
+    display:grid;    
+     grid-template-columns: [linea1] 1fr [linea2] 1fr  [linea3] 1fr 1fr; 
+    /*grid-template-columns:repeat(5,1fr);*/
+    row-gap: 20px;
+    column-gap: 30px;
+    
+     /*grid-template-areas: 'area1 area1 area2 area2 area5' 'area3 area3 area4 area4 area4';*/
+
+    /*grid-template-rows: [linea11] 100px [linea22]  100px 150px;*/
+}
+
+@media (max-width: 600px){
+    .App{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+/*
+.Item:nth-child(9){
+    grid-area: area1;
+}
+.Item:nth-child(3){ 
+    grid-area: area3;
+}
+.Item:nth-child(1){ 
+    grid-area: area4;
+}*/
+
+.Item:nth-child(3){ 
+    grid-row-start: linea2;
+    grid-row-end: linea3;
+}

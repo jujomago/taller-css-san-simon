@@ -1,4 +1,5 @@
 import React from "react";
+import "../Flex.css"
 
 export const FlexBox = () => {
   return (
